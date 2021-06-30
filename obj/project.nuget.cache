@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1K4etjMEFnPmFNk5Rv6xJmSFJp7sydwv3ikkkmls9WB7+45tCPeNxOTK1TmDO77MwA4nuP+QWdoc2i2q2cDvPQ==",
+  "dgSpecHash": "wJdm7Sp4FZVSE1RE70h4jYrLxV/uBTFiT/IrEzb+W1cI0RgWVZnCSKgTMgU2U9/mDMN2GtSRfEHRNp0xAXntYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\k.poladov\\Desktop\\UserWallet\\UserWallet.csproj",
+  "projectFilePath": "C:\\Users\\k.poladov\\Desktop\\MyProject\\UserWallet\\UserWallet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\k.poladov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\k.poladov\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

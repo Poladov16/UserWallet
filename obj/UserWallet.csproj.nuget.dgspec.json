@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\k.poladov\\Desktop\\UserWallet\\UserWallet.csproj": {}
+    "C:\\Users\\k.poladov\\Desktop\\MyProject\\UserWallet\\UserWallet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\k.poladov\\Desktop\\UserWallet\\UserWallet.csproj": {
+    "C:\\Users\\k.poladov\\Desktop\\MyProject\\UserWallet\\UserWallet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\k.poladov\\Desktop\\UserWallet\\UserWallet.csproj",
+        "projectUniqueName": "C:\\Users\\k.poladov\\Desktop\\MyProject\\UserWallet\\UserWallet.csproj",
         "projectName": "UserWallet",
-        "projectPath": "C:\\Users\\k.poladov\\Desktop\\UserWallet\\UserWallet.csproj",
+        "projectPath": "C:\\Users\\k.poladov\\Desktop\\MyProject\\UserWallet\\UserWallet.csproj",
         "packagesPath": "C:\\Users\\k.poladov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\k.poladov\\Desktop\\UserWallet\\obj\\",
+        "outputPath": "C:\\Users\\k.poladov\\Desktop\\MyProject\\UserWallet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

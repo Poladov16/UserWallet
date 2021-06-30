@@ -6,15 +6,13 @@ using UserWallet.Models;
 
 namespace UserWallet.Repositories
 {
-   public interface IWalletRepository
+    public interface IWalletRepository
     {
-        Task<IEnumerable<Accaunt>> GetAccounts(int id);//состояние своего кошелька
+        IEnumerable<Accaunt> GetAccounts(int id);//состояние своего кошелька
 
-        Task<string> TransferMoney(RequestModel model);//Перевести деньги из одной валюты в другую
+        Task<bool> Update(Accaunt accaunt);
 
-        Task<string> WithDrawMoney(RequestModel model);//Снять деньги в одной из валют
-
-        Task<string> FillUp(RequestModel model);//Пополнить кошелек в одной из валют
+        Task<bool> Update(List<Accaunt> accaunt);
 
     }
 }

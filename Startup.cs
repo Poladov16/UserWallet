@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using UserWallet.Models;
 using UserWallet.Data;
 using UserWallet.Repositories;
+using UserWallet.Services;
 
 namespace UserWallet
 {
@@ -32,7 +33,7 @@ namespace UserWallet
            options.UseSqlServer(Configuration.GetConnectionString("AuthDbContextConnection")));
 
             services.AddScoped<IWalletRepository, WalletRepository>();
-
+            services.AddScoped<IWalletServices, WalletServices>();
             services.AddControllers();
         }
 

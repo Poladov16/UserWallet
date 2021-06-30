@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using UserWallet.Models;
 using UserWallet.Repositories;
+using UserWallet.Services;
 
 namespace UserWallet.Controllers
 {
@@ -15,16 +16,18 @@ namespace UserWallet.Controllers
 
     public class OperationsController : ControllerBase
     {
+        private readonly IWalletServices _walletServices;
         private readonly IWalletRepository _walletRepository;
-        public OperationsController(IWalletRepository walletRepository)
+        public OperationsController(IWalletServices walletServices, IWalletRepository walletRepository)
         {
+            _walletServices = walletServices;
             _walletRepository = walletRepository;
         }
 
         [HttpGet("GetAccounts/{id}")]
-        public async Task<IEnumerable<Accaunt>> GetAccounts([FromRoute]int id)
+        public IEnumerable<Accaunt> GetAccounts([FromRoute]int id)
         {
-            return await _walletRepository.GetAccounts(id);
+            return  _walletRepository.GetAccounts(id);
         }
 
         [HttpPost("TransferMoney")]
@@ -32,7 +35,7 @@ namespace UserWallet.Controllers
         {
             if (ModelState.IsValid)
             {
-                return await _walletRepository.TransferMoney(model);
+                return await _walletServices.TransferMoney(model);
             }
             return "Ошибка";
         }
@@ -42,7 +45,7 @@ namespace UserWallet.Controllers
         {
             if (ModelState.IsValid)
             {
-                return await _walletRepository.WithDrawMoney(model);
+                return await _walletServices.WithDrawMoney(model);
             }
             return "Ошибка";
         }
@@ -52,7 +55,7 @@ namespace UserWallet.Controllers
         {
             if (ModelState.IsValid)
             {
-                return await _walletRepository.FillUp(model);
+                return await _walletServices.FillUp(model);
             }
             return "Ошибка";
         }
